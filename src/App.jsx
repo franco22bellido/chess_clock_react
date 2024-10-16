@@ -49,9 +49,9 @@ function App() {
   return (
     <div className="flex-center">
       {/* <h1>Chess clock</h1> */}
-      <form className="form" onSubmit={(e)=> {e.preventDefault(); setTurn(0);setTimeLeft(inputValue*60); setInputValue('')}}>
+      <form className="form" onSubmit={(e)=> {e.preventDefault(); stopLastTimeLeft(); setTurn(0);setTimeLeft(inputValue*60); setInputValue('')}}>
         <input className="form-input" type="number" placeholder="Escribe el tiempo total" value={inputValue} onChange={(e)=> {setInputValue(e.target.value)}}/>
-        <button type="submit">Establecer tiempo</button>
+        <button type="submit">Establecer</button>
       </form>
       <button disabled={turn === 1 ? true : false} className="player-button" onClick={()=> changeTurn(1)}> {Math.floor(timePlayerOne / 60)}:{timePlayerOne % 60}</button>
       <button disabled={turn === 2 ? true : false} className="player-button" onClick={()=> changeTurn(2)}>{Math.floor(timePlayerTwo / 60)}:{timePlayerTwo % 60}</button>

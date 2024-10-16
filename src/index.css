@@ -17,6 +17,13 @@
   width: 98%;
   margin: auto;
 }
+@media (min-width: 1024px) {
+  .container {
+    width: 58%;
+    margin: auto;
+  }
+}
+
 a {
   font-weight: 500;
   color: #646cff;
