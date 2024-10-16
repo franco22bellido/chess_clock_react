@@ -1,0 +1,12 @@
+.flex-center {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.player-button{
+    width: 100%; 
+    margin-bottom: 5px;
+    height: 30vh;
+}
