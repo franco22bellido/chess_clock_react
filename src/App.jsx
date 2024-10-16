@@ -53,8 +53,8 @@ function App() {
         <input className="form-input" type="number" placeholder="Escribe el tiempo total" value={inputValue} onChange={(e)=> {setInputValue(e.target.value)}}/>
         <button disabled={inputValue === '' ? true : false} type="submit">Establecer</button>
       </form>
-      <button disabled={turn === 1 ? true : false} className="player-button" onClick={()=> changeTurn(1)}> {Math.floor(timePlayerOne / 60)}:{timePlayerOne % 60}</button>
-      <button disabled={turn === 2 ? true : false} className="player-button" onClick={()=> changeTurn(2)}>{Math.floor(timePlayerTwo / 60)}:{timePlayerTwo % 60}</button>
+      <button disabled={turn === 2 ? true : false} className="player-button" onClick={()=> changeTurn(2)}> {Math.floor(timePlayerOne / 60)}:{timePlayerOne % 60}</button>
+      <button disabled={turn === 1 ? true : false} className="player-button" onClick={()=> changeTurn(1)}>{Math.floor(timePlayerTwo / 60)}:{timePlayerTwo % 60}</button>
     </div>
   )
 }
